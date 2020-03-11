@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class login extends AppCompatActivity {
 
@@ -14,13 +15,14 @@ public class login extends AppCompatActivity {
 
     }
 
-    void onClickloginButton()
+    public void onClickloginButton(View view)
     {
 
     }
 
-    void RegisterButton()
+    public void onClickRegisterButton(View view)
     {
-
+        Intent intent = new Intent(login.this, Register.class);
+        startActivity(intent);
     }
 }
