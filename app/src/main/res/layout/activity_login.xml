@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/userIDtext"
+        android:layout_width="358dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="124dp"
+        android:text="ユーザーID"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userIDEdit"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userIDtext" />
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="330dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="44dp"
+        android:text="password"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userIDEdit" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="302dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordtext" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="242dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onClickloginButton"
+        android:text="OK"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/RegisterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="246dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="32dp"
+        android:text="新規登録"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
