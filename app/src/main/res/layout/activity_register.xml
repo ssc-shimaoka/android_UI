@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="282dp"
+        android:layout_width="280dp"
         android:layout_height="32dp"
         android:layout_marginTop="68dp"
         android:text="@string/title"
@@ -18,24 +18,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/scrolltext"
-        android:layout_width="277dp"
-        android:layout_height="265dp"
-        android:layout_marginTop="76dp"
+    <ScrollView
+        android:layout_width="280dp"
+        android:layout_height="350dp"
         android:text="@string/consent"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/scrolltext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:text="@string/consent"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.08" />
+    </ScrollView>
 
     <Button
         android:id="@+id/button"
         android:layout_width="121dp"
         android:layout_height="74dp"
-        android:layout_marginBottom="132dp"
+        android:layout_marginBottom="96dp"
         android:onClick="onClickOKButton"
         android:text="@string/OKButton"
         android:textSize="30sp"
