@@ -17,4 +17,9 @@ public class Register extends AppCompatActivity {
     {
 
     }
+
+    public void onClickCancelButton(View view)
+    {
+        finish();
+    }
 }
