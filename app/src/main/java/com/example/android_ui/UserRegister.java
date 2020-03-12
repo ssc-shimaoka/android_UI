@@ -6,21 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Register extends AppCompatActivity {
+public class UserRegister extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_user_register);
     }
 
-    public void onClickOKButton(View view)
+    public void onClickUserRegisterOKButton(View view)
     {
-        Intent intent = new Intent(Register.this, UserRegister.class);
+        Intent intent = new Intent(UserRegister.this, UserRegister.class);
         startActivity(intent);
     }
 
-    public void onClickCancelButton(View view)
+    public void onClickUserRegisterCancelButton(View view)
     {
         finish();
     }
