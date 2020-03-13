@@ -17,7 +17,8 @@ public class login extends AppCompatActivity {
 
     public void onClickloginButton(View view)
     {
-
+        Intent intent = new Intent(login.this, navi.class);
+        startActivity(intent);
     }
 
     public void onClickRegisterButton(View view)

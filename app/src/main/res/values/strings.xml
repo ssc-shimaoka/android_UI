@@ -6,4 +6,18 @@
     <string name="cancel">キャンセル</string>
     <string name="UserRegisterTitle">ユーザー登録</string>
 
+    <string name="title_activity_navi">navi</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">お試しアプリ</string>
+    <string name="nav_header_subtitle">navigetionview</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">バーコード表示</string>
+    <string name="menu_gallery">アカウント設定</string>
+    <string name="menu_slideshow">このアプリについて</string>
+
+    <string name="home_second">Home Second</string>
+
 </resources>
