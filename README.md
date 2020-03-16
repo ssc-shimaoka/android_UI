@@ -25,8 +25,8 @@
 　会員証画面にてポイント表示などは、表として表示すると思うが  
   Fragment上で実装するときに、Activityクラスと違うことで実装の懸念となる点はあるかをチェック  
   
-   <ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this.getContext(), android.R.layout.simple_list_item_1, foods);
-   表示したい文字列（今回は配列）をアダプタに関連づける際に、contextをthis.getContext()にて取得しなければならなかった。
+   *ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this.getContext(), android.R.layout.simple_list_item_1, foods);*  
+   表示したい文字列（今回は配列）をアダプタに関連づける際に、contextをthis.getContext()にて取得しなければならなかった。  
 　　※Activityの場合は、thisにて取得される。
   
   上記以外は、今のところ懸念する項目はない模様。
