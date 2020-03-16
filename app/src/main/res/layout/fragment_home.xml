@@ -18,4 +18,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="268dp"
+        android:layout_height="375dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="107dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
